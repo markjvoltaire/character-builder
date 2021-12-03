@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function Preview() {
-  return <div></div>;
+  return <div className="character-preview"></div>;
 }
