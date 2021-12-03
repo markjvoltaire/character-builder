@@ -1,11 +1,7 @@
 import React from 'react';
 import './Head.css';
-import { useState } from 'react';
 
 export default function Head() {
-  const [head, setHead] = useState('head');
-  const [headCount, setHeadCount] = useState(0);
-
   return (
     <div className="selector">
       {' '}

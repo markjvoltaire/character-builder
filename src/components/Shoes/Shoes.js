@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Shoes() {
-  const [shoeCount, setShoeCount] = useState(0);
-
   return (
     <div>
       <select>

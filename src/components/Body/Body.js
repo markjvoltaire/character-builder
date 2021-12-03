@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Body() {
-  const [body, setBody] = useState('curry-jersey');
-  const [bodyCount, setBodyCount] = useState(0);
-
   return (
     <div>
       <select className="jersey-picker">
