@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.torso {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+}
+
+.images {
+  padding-left: 1000px;
+}
+
+.head-selectors {
+  padding-left: 800px;
+}
+
+.body-selectors {
+  padding-left: 800px;
+}
+
+.bottom-selectors {
+  padding-left: 800px;
+}
