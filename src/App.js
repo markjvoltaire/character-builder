@@ -1,12 +1,12 @@
 import './App.css';
-import Main from './components/Main/Main';
+import Character from './components/Main/Character';
 
 function App() {
   return (
     <>
       <h1 className="title"> Create Your Character </h1>
       <div className="App"></div>
-      <Main />
+      <Character />
     </>
   );
 }

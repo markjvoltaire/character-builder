@@ -10,6 +10,7 @@ export default function Main() {
   const [headCount, setHeadCount] = useState(0);
   const [bodyCount, setBodyCount] = useState(0);
   const [bottomCount, setBottomCount] = useState(0);
+  const [catchPhrase, setCatchPhrase] = useState('');
 
   const incrementHeadCount = () => {
     setHeadCount(headCount + 1);
@@ -32,7 +33,6 @@ export default function Main() {
           onChange={(e) => setHead(e.target.value)}
           className="heads"
         >
-          <div></div>
           <option value="bird">birddie</option>
           <option value="dog">Spike</option>
           <option value="duck">Aflac Duck</option>
@@ -70,11 +70,18 @@ export default function Main() {
         <div>
           <p className="results">
             {' '}
-            You have changed the head:{headCount} times, the body:{bodyCount} times, and the pants:
+            You have changed the head {headCount} times, the body {bodyCount} times, and the pants:
             {bottomCount} times. And nobody can forget your characters classic catchphrases:
+            {`${catchPhrase}`}
           </p>
         </div>
       </div>
+
+      <div>
+        <input type="text" onChange={(e) => setCatchPhrase(e.target.value)}></input>
+        <button>Add Catchpharse </button>
+      </div>
+
       <Preview head={head} body={body} bottom={bottom} />
     </div>
   );
